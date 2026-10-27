@@ -16,6 +16,6 @@ RUN uv sync --locked
 
 
 # COPY:将文件复制到镜像中
-COPY pipeline.py .
+COPY ingest_data.py .
 # ENTRYPOINT：要运行的默认命令
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "ingest_data.py"]
